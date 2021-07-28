@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+mypy = "*"
+pytest = "*"
+typing = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+test-unit="pytest src"
+test-hint="mypy src"
